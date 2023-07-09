@@ -1,8 +1,8 @@
 {
-  "name": "new",
+  "name": "telegram-challenge",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "El reto seria que crees una API RESTful en NEST JS para la conexion con la API de TELEGRAM. Deberias generar un endpoint que permita de manera local desde POSTMAN enviar mensajes, recibirlos, actualizarlos y borrarlos. Los mensajes deberian guardarse en Firebase Firestore.",
+  "author": "Nicolas Olmos",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -24,10 +24,14 @@
     "@nestjs/config": "^3.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
     "firebase": "^9.23.0",
+    "input": "^1.0.1",
     "joi": "^17.9.2",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "telegram": "^2.17.10"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",

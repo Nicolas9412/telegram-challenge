@@ -8,5 +8,8 @@ export default registerAs('config', () => {
     STORAGEBUCKET: process.env.STORAGEBUCKET,
     MESSAGINGSENDERID: process.env.MESSAGINGSENDERID,
     APPID: process.env.APPID,
+    APPID_TELEGRAM: process.env.APPID_TELEGRAM,
+    APIHASH_TELEGRAM: process.env.APIHASH_TELEGRAM,
+    PORT: process.env.PORT,
   };
 });

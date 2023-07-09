@@ -15,7 +15,7 @@ export class FirebaseService {
   public firestore: Firestore;
 
   //Collections
-  public messages: CollectionReference;
+  public users: CollectionReference;
 
   constructor(
     @Inject(config.KEY)
@@ -36,6 +36,6 @@ export class FirebaseService {
   }
 
   private createCollections() {
-    this.messages = collection(this.firestore, 'messages');
+    this.users = collection(this.firestore, 'users');
   }
 }

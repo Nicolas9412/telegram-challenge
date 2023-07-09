@@ -3,6 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { FirebaseService } from './firebase/firebase.service';
+import { TelegramModule } from './telegram/telegram.module';
 import config from './config';
 import * as Joi from 'joi';
 
@@ -19,8 +20,12 @@ import * as Joi from 'joi';
         STORAGEBUCKET: Joi.string().required(),
         MESSAGINGSENDERID: Joi.string().required(),
         APPID: Joi.string().required(),
+        APPID_TELEGRAM: Joi.number().required(),
+        APIHASH_TELEGRAM: Joi.string().required(),
+        PORT: Joi.number().required(),
       }),
     }),
+    TelegramModule,
   ],
   controllers: [AppController],
   providers: [AppService, FirebaseService],
